@@ -2,13 +2,13 @@
 import * as _ from "lodash";
 import * as React from "react";
 import {Image as RNImage, Animated, StyleSheet, View, Platform} from "react-native";
-import {BlurView} from "expo";
-import { type ____ImageStyleProp_Internal as ImageStyle } from "react-native/Libraries/StyleSheet/StyleSheetTypes";
-import type {ImageSourcePropType} from "react-native/Libraries/Image/ImageSourcePropType";
+import {BlurView} from "react-native-blur";
+import { ImageStyle } from "react-native/Libraries/StyleSheet/StyleSheetTypes";
+import {ImageSourcePropType} from "react-native/Libraries/Image/ImageSourcePropType";
 
 import CacheManager, {type DownloadOptions} from "./CacheManager";
 
-type ImageProps = {
+export type ImageProps = {
     style?: ImageStyle,
     defaultSource?: ImageSourcePropType,
     preview?: ImageSourcePropType,
@@ -18,7 +18,7 @@ type ImageProps = {
     tint?: "dark" | "light"
 };
 
-type ImageState = {
+export type ImageState = {
     uri: ?string,
     intensity: Animated.Value
 };
