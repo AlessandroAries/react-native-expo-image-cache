@@ -1,4 +1,4 @@
-
+// @flow
     import * as React from "react";
     import { View, StyleSheet, ensureComponentIsNative } from 'react-native';
     import {Image} from './Image';
