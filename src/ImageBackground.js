@@ -3,7 +3,7 @@
     import { View, StyleSheet, ensureComponentIsNative } from 'react-native';
     import Image, {type ImageProps, type ImageState}from "./Image";
     
-    export default class ImageBackground extends React.Component<ImageProps, ImageState> {
+    export class ImageBackground extends React.Component<ImageProps, ImageState> {
         setNativeProps(props) {
           const viewRef = this._viewRef;
           if (viewRef) {
