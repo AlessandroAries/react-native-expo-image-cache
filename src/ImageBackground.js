@@ -1,8 +1,8 @@
 // @flow
     import * as React from "react";
     import { View, StyleSheet, ensureComponentIsNative } from 'react-native';
-    import {Image} from './Image';
-     class ImageBackground extends React.Component {
+    import {Image, ImageProps, ImageState} from './Image';
+     class ImageBackground extends React.Component<ImageProps, ImageState> {
         setNativeProps(props) {
           const viewRef = this._viewRef;
           if (viewRef) {
