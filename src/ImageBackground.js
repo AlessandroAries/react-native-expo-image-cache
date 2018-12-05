@@ -2,7 +2,8 @@
     import * as React from "react";
     import { View, StyleSheet, ensureComponentIsNative } from 'react-native';
     import Image from "./Image";
-     class ImageBackground extends React.Component {
+    
+    export default class ImageBackground extends React.Component<{}> {
         setNativeProps(props) {
           const viewRef = this._viewRef;
           if (viewRef) {
@@ -39,5 +40,3 @@
       );
     }
   }
-  
-  export default ImageBackground; 
