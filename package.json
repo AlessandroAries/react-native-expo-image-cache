@@ -51,7 +51,6 @@
     "react-native-blur": "^3.2.2"
   },
   "peerDependencies": {
-    "expo": "*",
     "react": "*",
     "react-native": "*"
   }
