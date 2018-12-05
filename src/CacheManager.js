@@ -67,7 +67,7 @@ const getCacheEntry = async (uri: string): Promise<{ exists: boolean, path: stri
     try {
         await FileSystem.makeDirectoryAsync(BASE_DIR);
     } catch (e) {
-        // do nothing
+        console.log(e);
     }
     const info = await FileSystem.getInfoAsync(path);
     const {exists} = info;
